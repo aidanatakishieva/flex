@@ -1,0 +1,34 @@
+.title{
+    font-size: large;
+}
+
+p{
+    font-size: small;
+}
+@media (max-width:500px){
+    body{
+        color: blue;
+    }
+}
+@media (orientation: landscape) and (max-width:500px) {
+    .title{
+        color: green;
+    }
+}
+@media (orientation: portrait){
+   p{
+        color: cyan;
+    }
+}
+@media screen and (max-width:500px) {
+    a :before {
+      content: "it is converted link";
+    }
+  }
+  @media only screen
+  and (min-width: 320px)
+  and (max-width: 480px)
+  and (resolution: 150dpi) {
+    body { line-height: 5.4; }
+}
+

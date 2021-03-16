@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Flex</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="../styles.css" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        font: 1.2em/1.4 Arial, Helvetica, sans-serif;
+      }
+
+      body {
+        padding: 0 0 1em;
+      }
+
+      header {
+        background-color: rgba(0, 19, 70, 0.705);
+        color: #fff;
+        border: 5px solid rgba(0, 14, 61, 0.918);
+      }
+
+      header ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      header a {
+        color: #fff;
+        text-decoration: none;
+        display: block;
+        padding: 0.5em 1em;
+        border-top: 1px solid #999;
+      }
+
+      header .title {
+        font-size: 130%;
+        font-style: italic;
+        font-weight: bold;
+        padding: 1em;
+      }
+
+      main {
+        padding: 0 0.2em;
+      }
+      main h1 {
+        color: rgba(0, 19, 70, 0.705);
+      }
+      .cards {
+        display: flex;
+        flex-direction: row;
+
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      .cards :nth-of-type(odd){
+        flex: 0 0 200px;
+      }
+      .cards li {
+        border: 5px solid rgba(0, 14, 61, 0.918);
+        margin-bottom: 1em;
+      }
+
+      .cards h2 {
+        background-color: rgba(0, 19, 70, 0.705);
+        color: #fff;
+        margin: 1px;
+        padding: 0.5em 0.5em;
+      }
+
+      .cards .inner {
+        padding: 0.5em 0.5em;
+      }
+
+      .sidebar {
+        background-color: rgba(0, 19, 70, 0.705);
+        border: 5px solid rgba(0, 19, 70, 0.705);
+        padding: 0.5em 1em;
+        color: #fff;
+      }
+
+      @media only screen and (max-width: 500px) {
+        body {
+          font-size: smaller;
+        }
+      }
+     nav ul li a:hover{
+background-color: whitesmoke;
+color:rgba(0, 14, 61, 0.918) ;
+
+     }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="title">My Website</div>
+      <nav>
+        <ul>
+          <li>
+            <a href="">Link 1</a>
+          </li>
+          <li>
+            <a href="">Link 2</a>
+          </li>
+          <li>
+            <a href="">Link 3</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <article>
+        <h1>This is the main heading</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+          itaque architecto culpa consectetur, beatae provident obcaecati quod,
+          magni minus reiciendis, perferendis quae labore officiis recusandae?
+          Quisquam maxime doloremque distinctio dolorem.
+        </p>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea assumenda,
+          magni neque totam, id molestias cupiditate harum optio sapiente quam
+          impedit. Dolores ex dicta quam sed a blanditiis iste quis.
+        </p>
+
+        <ul class="cards">
+          <li>
+            <h2>Card One</h2>
+            <div class="inner">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
+                velit!
+              </p>
+            </div>
+          </li>
+          <li>
+            <h2>Card Two</h2>
+            <div class="inner">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                similique commodi, provident esse ut minima?
+              </p>
+            </div>
+          </li>
+          <li>
+            <h2>Card Three</h2>
+            <div class="inner">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perspiciatis officiis ullam ad voluptatum aspernatur dolore?
+              </p>
+            </div>
+          </li>
+          <li>
+            <h2>Card Four</h2>
+            <div class="inner">
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Consequatur dolor id inventore rem aperiam esse numquam rerum
+                veritatis repellendus voluptatibus?
+              </p>
+            </div>
+          </li>
+          <li>
+            <h2>Card Five</h2>
+            <div class="inner">
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Quisquam, eos?
+              </p>
+            </div>
+          </li>
+        </ul>
+      </article>
+      <aside class="sidebar">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate,
+          perferendis.
+        </p>
+      </aside>
+    </main>
+  </body>
+</html>
